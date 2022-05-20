@@ -1,0 +1,51 @@
+<app-header></app-header>
+<button (click)="printPage()" mat-flat-button   class="print">Print</button>
+<div class="headerdesign">
+    <h4 style="color: red;">OutCome 1</h4>
+    <div >
+      <p >Outcome 1: Reduced transmission through, improved local early detection and treatment of leprosy</p>
+      <p >Output 1.2 Support Government Leprosy services and build capacity of MOH staff in conducting leprosy detection & treatment</p>
+      <p >Activity : 1.2.2 (120 Support Government screening for leprosy activities with drama (street & play-back theatre) and awareness activities, as well as in coordinating local arrangements for the conducting of mobile clinics for screening in Batticolo areas.</p>
+    </div>
+    
+</div>
+
+<section >
+    <div class="example-button-row">
+      <button id="printPageButton" class="addbutton" mat-raised-button  (click)="addActivity()">Add Activity 1.2.2</button>
+    </div>
+  </section>
+  <br>
+  <div class="arrangement">
+    <table datatable >
+      <thead class ="contentarrangement">
+        <tr class="rowtext">
+          <th>No</th>
+          <th>Date</th>
+          <th>Address</th>
+          <th>Methodology</th>
+          <th>Participants</th>
+          <th>New case</th>
+          <th>Budget</th>
+          <th>Spent</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+
+      <tbody class="arrangement" >
+        <tr *ngFor="let act of activity122" class ="contentarrangement">
+              <td>{{act.no}}</td>
+              <td>{{act.date}}</td>
+              <td>{{act.address}}</td>
+              <td>{{act.methodology}}</td>
+              <td>{{act.participants}}</td>
+              <td>{{act.newcase}}</td>
+              <td>{{act.budget}}</td>
+              <td>{{act.spent}}</td>
+              <td>{{act.budget - act.spent}}</td>
+          </tr>
+       </tbody>
+    </table>
+  </div>
+
+  

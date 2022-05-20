@@ -1,0 +1,51 @@
+<app-header></app-header>
+<button (click)="printPage()" mat-flat-button   class="print">Print</button>
+<div class="headerdesign">
+    <h4 style="color: red;">OutCome 1</h4>
+    <div >
+      <p >Outcome 3:  Reduced vulnerability through improved agriculture and nutrition for people affected by leprosy within Batticaloa, Mannar & Vavuniya Districts</p>
+      <p >Output 3.1: Improved nutrition of people affected by leprosy</p>
+      <p >Activity : 3.1.1 Develop ‘Farming God’s Way’ along with agroforestry on 120 small local farms of people affected by leprosy with help of local churches.</p>
+    </div>
+    
+</div>
+
+<!-- <section >
+    <div class="example-button-row">
+      <button class="addbutton" mat-raised-button  (click)="addActivity()">Add Activity 1.1.1</button>
+    </div>
+  </section> -->
+  <br>
+  <div class="arrangement">
+    <table datatable >
+      <thead class ="contentarrangement">
+        <tr class="rowtext">
+          <th>No</th>
+          <th>Date</th>
+          <th>Address</th>
+          <th>G/S Devision</th>
+          <th>Methodology</th>
+          <th>Participants</th>
+          <th>Budget</th>
+          <th>Spent</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+
+      <tbody class="arrangement" >
+        <tr *ngFor="let act of activity311" class ="contentarrangement">
+              <td>{{act.no}}</td>
+              <td>{{act.date}}</td>
+              <td>{{act.address}}</td>
+              <td>{{act.gs}}</td>
+              <td>{{act.methodology}}</td>
+              <td>{{act.participants}}</td>
+              <td>{{act.budget}}</td>
+              <td>{{act.spent}}</td>
+              <td>{{act.budget - act.spent}}</td>
+          </tr>
+       </tbody>
+    </table>
+  </div>
+
+  

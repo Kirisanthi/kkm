@@ -1,0 +1,55 @@
+<app-header></app-header>
+
+<button (click)="printPage()" mat-flat-button   class="print">Print</button>
+<button class="graph" mat-flat-button id="printPageButton" (click)="viewgraph()">Graph view</button>
+
+<section >
+    <div class="example-button-row">
+      <button id="printPageButton" class="addbutton" mat-raised-button  (click)="addIncome()">Add Income</button>
+    </div>
+  </section>
+  <br>
+  <div class="arrangement">
+    <table datatable >
+      <thead class ="contentarrangement">
+        <tr class="rowtext">
+          <th>No</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Sex</th>
+          <th>Village</th>
+          <th>GN</th>
+          <th>DS</th>
+          <th>District</th>
+          <th>2019</th>
+          <th>2020</th>
+          <th>2021</th>
+          <th>BasicIncome</th>
+          <th>2020</th>
+          <th>2021</th>
+          <!-- <th id="printPageButton" >Graph view</th> -->
+        </tr>
+      </thead>
+      <tbody class="arrangement" >
+        <tr *ngFor="let act of income" class ="contentarrangement">
+              <td>{{act.no}}</td>
+              <td>{{act.name}}</td>
+              <td>{{act.age}}</td>
+              <td>{{act.sex}}</td>
+              <td>{{act.village}}</td>
+              <td>{{act.gn}}</td>
+              <td>{{act.ds}}</td>
+              <td>{{act.district}}</td>
+              <td>{{act.y1}}</td>
+              <td>{{act.y2}}</td>
+              <td>{{act.y3}}</td>
+              <td>{{act.basicincome}}</td>
+              <td>{{act.by2}}</td>
+              <td>{{act.by3}}</td>
+              <!-- <td id="printPageButton" ><button class="graph" (click)="viewgraph()">Graph view</button></td> -->
+          </tr>
+       </tbody>
+    </table>
+  </div>
+
+  

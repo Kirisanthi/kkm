@@ -1,0 +1,130 @@
+
+<h4>Add Score Details:</h4>
+
+<div id="temp" class="container">
+    <form #f="ngForm" name="form" (submit)="onSubmit(f)" autocomplete="off">
+    <div class="row">
+      <div class="col-25">
+        <label for="uId" class="col-sm-4 col-form-label" >No:</label>
+      </div>
+      <div class="col-75">
+        <input type ="text" [(ngModel)]="score.no" placeholder="no" name="no" id="no" class="form-control"> 
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Name:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="score.name" placeholder="name" name="name" class="form-control">
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Sex:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="score.sex" placeholder="sex" name="sex" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">District:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="score.district" placeholder="district" name="district" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="uId" class="col-sm-4 col-form-label">Diagnosed Date:</label>
+        </div>
+        <div class="col-75">
+          <input required [(ngModel)]="score.diagnoseddate"
+          type="datetime-local"
+          class="form-control"
+          id="date"
+          name="date" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Eye:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="score.eye" placeholder="eye" name="eye" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Hand:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="score.hand" placeholder="hand" name="hand" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Leg:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="score.leg" placeholder="leg" name="leg" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">2020:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="score.y1" placeholder="2020" name="y1" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">2020 %:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="score.py1" placeholder="2020 %" name="py1" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">2021:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="score.y2" placeholder="2021" name="y2" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">2021 %:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="score.py2" placeholder="2021 %" name="py2" class="form-control">
+        </div>
+      </div>
+
+
+    <div class="row">
+        <button class="design" type="submit" style="float: right;" mat-raised-button color="primary">Save Details</button>  
+        <button class="design2"mat-raised-button color="warn" style="float: right;"  (click)="close()" >Cancel</button>
+    </div>
+
+
+  </form>
+</div>
+
+
+
+

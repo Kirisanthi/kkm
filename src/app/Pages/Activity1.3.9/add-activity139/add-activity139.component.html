@@ -1,0 +1,85 @@
+
+<h4>Add Activity Details:</h4>
+
+<div id="temp" class="container">
+    <form #f="ngForm" name="form" (submit)="onSubmit(f)" autocomplete="off">
+    <div class="row">
+      <div class="col-25">
+        <label for="uId" class="col-sm-4 col-form-label" >No:</label>
+      </div>
+      <div class="col-75">
+        <input type ="text" [(ngModel)]="activity139.no" placeholder="no" name="no" id="no" class="form-control"> 
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="uId" class="col-sm-4 col-form-label">Date:</label>
+      </div>
+      <div class="col-75">
+        <input required [(ngModel)]="activity139.date"
+        type="datetime-local"
+        class="form-control"
+        id="date"
+        name="date" />
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Place:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="activity139.place" placeholder="place" name="place" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Programme:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="activity139.programme" placeholder="programme" name="programme" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Participants:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="activity139.noofpatients" placeholder="participants" name="noofpatients" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Budget:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="activity139.budget" placeholder="budget" name="budget" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Spent:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="activity139.spent" placeholder="spent" name="spent" class="form-control">
+        </div>
+      </div>
+
+
+    <div class="row">
+        <button class="design" type="submit" style="float: right;" mat-raised-button color="primary">Save Details</button>  
+        <button class="design2"mat-raised-button color="warn" style="float: right;"  (click)="close()" >Cancel</button>
+    </div>
+
+
+  </form>
+</div>
+
+
+
+

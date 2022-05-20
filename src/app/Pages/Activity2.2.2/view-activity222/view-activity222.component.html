@@ -1,0 +1,48 @@
+<app-header></app-header>
+<button (click)="printPage()" mat-flat-button   class="print">Print</button>
+<div class="headerdesign">
+    <h4 style="color: red;">OutCome 1</h4>
+    <div >
+      <p >Outcome 2: People affected by leprosy have become empowered and more self-reliant through community-based rehabilitation</p>
+      <p >Activity : 2.2.2 Provide training to KKM staff, People forum for change & staff of health department heighten mental health awareness</p>
+    </div>
+    
+</div>
+
+<section >
+    <div class="example-button-row">
+      <button id="printPageButton" class="addbutton" mat-raised-button  (click)="addActivity()">Add Activity 2.2.2</button>
+    </div>
+  </section>
+  <br>
+  <div class="arrangement">
+    <table datatable >
+      <thead class ="contentarrangement">
+        <tr class="rowtext">
+          <th>No</th>
+          <th>Date</th>
+          <th>development program & workshops</th>
+          <th>Methodology</th>
+          <th>Participants</th>
+          <th>Budget</th>
+          <th>Spent</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+
+      <tbody class="arrangement" >
+        <tr *ngFor="let act of activity222" class ="contentarrangement">
+              <td>{{act.no}}</td>
+              <td>{{act.date}}</td>
+              <td>{{act.programme}}</td>
+              <td>{{act.methodology}}</td>
+              <td>{{act.participants}}</td>
+              <td>{{act.budget}}</td>
+              <td>{{act.spent}}</td>
+              <td>{{act.budget - act.spent}}</td>
+          </tr>
+       </tbody>
+    </table>
+  </div>
+
+  

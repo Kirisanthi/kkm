@@ -1,0 +1,39 @@
+.bg
+{
+  width: 100%;
+  z-index: 0;
+  height: 70%;
+}
+
+.column {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  height: 40%; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.print{
+  padding-left: 5%;
+  padding-right: 5%;
+   margin-top: 0.5%;
+  margin-left: 1% ;
+  color: cornsilk;
+  /* margin-bottom: 2%; */
+  background-color: rgb(34, 34, 153);
+    }
+    @media print
+  {    
+    /* .print,.design *
+      {
+          display: none;
+      } */
+      
+  }
+

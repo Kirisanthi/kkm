@@ -1,0 +1,49 @@
+<app-header></app-header>
+<button (click)="printPage()" mat-flat-button   class="print">Print</button>
+<button class="graph" mat-flat-button id="printPageButton" (click)="viewgraph()">Graph view</button>
+
+
+<section >
+    <div class="example-button-row">
+      <button id="printPageButton" class="addbutton" mat-raised-button  (click)="addScore()">Add Score</button>
+    </div>
+  </section>
+  <br>
+  <div class="arrangement">
+    <table datatable >
+      <thead class ="contentarrangement">
+        <tr class="rowtext">
+          <th>No</th>
+          <th>Name</th>
+          <th>Sex</th>
+          <th>District</th>
+          <th>Diagnosed Date</th>
+          <th>Eye</th>
+          <th>Hand</th>
+          <th>Leg</th>
+          <th>2020</th>
+          <th>%</th>
+          <th>2021</th>
+          <th>%</th>
+        </tr>
+      </thead>
+      <tbody class="arrangement" >
+        <tr *ngFor="let act of score" class ="contentarrangement">
+              <td>{{act.no}}</td>
+              <td>{{act.name}}</td>
+              <td>{{act.sex}}</td>
+              <td>{{act.district}}</td>
+              <td>{{act.diagnoseddate}}</td>
+              <td>{{act.eye}}</td>
+              <td>{{act.hand}}</td>
+              <td>{{act.leg}}</td>
+              <td>{{act.y1}}</td>
+              <td>{{act.py1}}</td>
+              <td>{{act.y2}}</td>
+              <td>{{act.py2}}</td>
+          </tr>
+       </tbody>
+    </table>
+  </div>
+
+  

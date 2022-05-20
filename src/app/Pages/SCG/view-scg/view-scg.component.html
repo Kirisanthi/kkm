@@ -1,0 +1,44 @@
+<app-header></app-header>
+<button (click)="printPage()" mat-flat-button   class="print">Print</button>
+
+
+<section >
+    <div class="example-button-row">
+      <button id="printPageButton" class="addbutton" mat-raised-button  (click)="addScg()">Add SCG</button>
+    </div>
+  </section>
+  <br>
+  <div class="arrangement">
+    <table datatable >
+      <thead class ="contentarrangement">
+        <tr class="rowtext">
+          <th>No</th>
+          <th>GNo</th>
+          <th>Name</th>
+          <th>Sex</th>
+          <th>District</th>
+          <th>Age</th>
+          <th>MB/PB</th>
+          <th>Card No</th>
+          <th>EHF Score</th>
+          <th>EHF Score 2021</th>
+        </tr>
+      </thead>
+      <tbody class="arrangement" >
+        <tr *ngFor="let act of scg" class ="contentarrangement">
+              <td>{{act.no}}</td>
+              <td>{{act.gno}}</td>
+              <td>{{act.name}}</td>
+              <td>{{act.sex}}</td>
+              <td>{{act.district}}</td>
+              <td>{{act.age}}</td>
+              <td>{{act.mb}}</td>
+              <td>{{act.card}}</td>
+              <td>{{act.ehf}}</td>
+              <td>{{act.ehfscore}}</td>
+          </tr>
+       </tbody>
+    </table>
+  </div>
+
+  

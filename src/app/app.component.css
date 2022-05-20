@@ -1,0 +1,18 @@
+
+    .print{
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 1%;
+        margin-left: 1% ;
+        color: cornsilk;
+        margin-bottom: 2%;
+        background-color: rgb(34, 34, 153);
+          }
+          @media print
+        {    
+          .print,.design *
+            {
+                display: none;
+            }
+            
+        }

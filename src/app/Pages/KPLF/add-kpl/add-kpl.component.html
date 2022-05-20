@@ -1,0 +1,94 @@
+
+<h4>Add Activity Details:</h4>
+
+<div id="temp" class="container">
+    <form #f="ngForm" name="form" (submit)="onSubmit(f)" autocomplete="off">
+    <div class="row">
+      <div class="col-25">
+        <label for="uId" class="col-sm-4 col-form-label" >No:</label>
+      </div>
+      <div class="col-75">
+        <input type ="text" [(ngModel)]="kpl.no" placeholder="no" name="no" id="no" class="form-control"> 
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="uId" class="col-sm-4 col-form-label">Date:</label>
+      </div>
+      <div class="col-75">
+        <input required [(ngModel)]="kpl.date"
+        type="datetime-local"
+        class="form-control"
+        id="date"
+        name="date" />
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Name:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="kpl.name" placeholder="name" name="name" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Village:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="kpl.village" placeholder="village" name="village" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">GN:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="kpl.gn" placeholder="gn" name="gn" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">DS:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="kpl.ds" placeholder="ds" name="ds" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">District:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="kpl.district" placeholder="district" name="district" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+            <label for="uId" class="col-sm-4 col-form-label">Total:</label>
+        </div>
+        <div class="col-75">
+            <input type ="text" [(ngModel)]="kpl.total" placeholder="total" name="total" class="form-control">
+        </div>
+      </div>
+
+
+    <div class="row">
+        <button class="design" type="submit" style="float: right;" mat-raised-button color="primary">Save Details</button>  
+        <button class="design2"mat-raised-button color="warn" style="float: right;"  (click)="close()" >Cancel</button>
+    </div>
+
+
+  </form>
+</div>
+
+
+
+

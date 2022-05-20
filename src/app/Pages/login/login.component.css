@@ -1,0 +1,62 @@
+/* .design{
+    margin-top: 20%;
+}
+
+.error{
+    color: brown;
+}
+.contentalignment{
+    margin-left: 40%;
+    
+    
+}
+.borderdesign{
+    border-style: solid;
+} */
+
+
+.inner {
+    margin-left:30%;
+    margin-top:10%;
+    margin-right:28%;
+    border: 2px solid #070706;   
+   }
+.divider{
+    overflow-y: hidden;
+}
+.avatar{
+    height: 120px;
+    width: 120px;
+    margin-left:46%;
+}
+.design{
+    padding-left: 30px;
+}
+
+.form-group{
+    padding-left: 60px;
+    
+}
+
+input {
+    width: 80%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+.login{
+    width: 90%;
+    color: rgb(1, 2, 1);
+    text-decoration: bold;
+    background-color: green;
+    padding: 12px 12px;
+    margin:5%;
+    margin-bottom: 7%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    /* margin-right: 17%; */
+}
+
+.error{
+    color: red;
+}
